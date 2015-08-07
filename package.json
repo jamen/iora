@@ -1,0 +1,30 @@
+{
+  "name": "iora",
+  "version": "0.0.0",
+  "description": "Make you servers modular and easier to manage with iora.",
+  "main": "index.js",
+  "scripts": {
+    "test": "iora test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iora/iora.git"
+  },
+  "keywords": [
+    "iora",
+    "module",
+    "modular",
+    "express"
+  ],
+  "author": "Jamen Marz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iora/iora/issues"
+  },
+  "homepage": "https://github.com/iora/iora#readme",
+
+  "dependencies":{
+    "express": "latest",
+    "json-config-reader": "latest"
+  }
+}
