@@ -26,5 +26,9 @@
   "dependencies":{
     "express": "latest",
     "json-config-reader": "latest"
+  },
+  "bin": {
+    "iora": "./index.js",
+    "ioradev": "./index.js"
   }
 }
