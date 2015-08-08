@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 
 (function(argv, lib, path){
-  // Rewrite info
+  // Rewrite info for dev logging
+  global.console.old_info = global.console.info;
   global.console.info = function(){
     if (path.basename(process.argv[1]) === "ioradev") {
-      global.console.info.apply(null, arguments);
+      process.stdout.write("[ioradev] ");
+      global.console.old_info.apply(this, arguments);
     }
   }
 
