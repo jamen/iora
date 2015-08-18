@@ -9,6 +9,11 @@
       lib.run(argv, lib.core(argv));
     }
 
+    // Help
+    else if (argv[0] === 'help') {
+      lib.help(argv);
+    }
+
     // Unknown command
     else {
       console.log('Error: Unknown option "'+argv[0]+'"');
