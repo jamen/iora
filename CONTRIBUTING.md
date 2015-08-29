@@ -1,7 +1,7 @@
 # Contributing
 This files contains some guidelines we want you follow when contributing to iora.
 
-Note that the "i" in "iora" should be lowercase, the exceptions are when it's at the beginning of a sentence or in a title.  Although if it stands alone in a title, make it lowercase regardless...
+Note that the "i" in "iora" should be lowercase, the exceptions are when it's at the beginning of a sentence or in a title.  Although if it stands alone in a title, make it lowercase regardless...  This is to limit confusion, since a uppercase "i" ('I') and a lowercase 'L' ('l') look really similar on some fonts. 
 
 Some examples:
 
