@@ -16,9 +16,10 @@
 
     // Init
     else if (argv[0] === 'init') {
-      lib.init();
+      lib.init(argv);
     }
 
+    // Version
     else if (argv[0] === 'version') {
       lib.version();
     }
