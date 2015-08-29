@@ -19,6 +19,10 @@
       lib.init();
     }
 
+    else if (argv[0] === 'version') {
+      lib.version();
+    }
+
     // Unknown command
     else {
       console.log('Error: Unknown option "'+argv[0]+'"');
