@@ -14,6 +14,7 @@
       lib.help(argv);
     }
 
+    // Init
     else if (argv[0] === 'init') {
       lib.init();
     }
