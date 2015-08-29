@@ -14,6 +14,10 @@
       lib.help(argv);
     }
 
+    else if (argv[0] === 'init') {
+      lib.init();
+    }
+
     // Unknown command
     else {
       console.log('Error: Unknown option "'+argv[0]+'"');
