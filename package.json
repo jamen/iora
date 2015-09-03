@@ -4,7 +4,7 @@
   "description": "Make you servers modular and easier to manage with iora.",
   "main": "index.js",
   "scripts": {
-    "test": "iora test"
+    "test": "node ./test"
   },
   "repository": {
     "type": "git",

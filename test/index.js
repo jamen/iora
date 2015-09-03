@@ -10,4 +10,6 @@ module.exports = function(){
       throw e;
     }
   }
+
+  console.log('All tests pass.');
 };
