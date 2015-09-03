@@ -24,6 +24,11 @@
       lib.version();
     }
 
+    // test
+    else if (argv[0] === 'test') {
+      lib.test();
+    }
+
     // Unknown command
     else {
       console.log('Error: Unknown option "'+argv[0]+'"');
