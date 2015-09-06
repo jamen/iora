@@ -1,6 +1,6 @@
 {
   "name": "iora",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "description": "Make you servers modular and easier to manage with iora.",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,7 @@
 
   "dependencies":{
     "express": "latest",
-    "refig": "^1.2.0"
+    "refig": "^1.2.1"
   },
   "bin": {
     "iora": "./index.js"
