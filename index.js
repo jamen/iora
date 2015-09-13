@@ -34,7 +34,5 @@ if (silent !== -1) {
  * Argument routing:
  */
 if (argv[0] === 'run') {
-  // ...
-  console.log('Working!');
-  process.exit();
+  lib.run(lib.server());
 }
