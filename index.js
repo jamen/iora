@@ -8,10 +8,34 @@ var lib = require('./lib'),
 global.iora = {};
 
 /*
+ * Check flags
+ */
+// --silent, -s
+var silent =  argv.indexOf('--silent');
+if (silent !== -1) {
+  argv.splice(silent, 1);
+  console.silence();
+}
+
+iora.argv = argv;
+
+/*
+ * Execution directory
+ */
+
+iora.dir = (function(){
+ if (argv[1]) {
+   return path.resolve(path.join(process.cwd(), argv[1]));
+ } else {
+   return path.resolve(process.cwd());
+ }
+})();
+
+/*
  * Load configuration
  */
 var load = function(){
-  var configPath = path.join(process.cwd(), 'iora.json');
+  var configPath = path.join(iora.dir, 'iora.json');
   try {
     iora.config = refig
       .set('async', false)
@@ -28,21 +52,13 @@ var load = function(){
 };
 
 /*
- * Check flags
- */
-// --silent, -s
-var silent =  argv.indexOf('--silent');
-if (silent !== -1) {
-  argv.splice(silent, 1);
-  console.silence();
-}
-
-iora.argv = argv;
-
-/*
  * Argument routing:
  */
 if (argv[0] === 'run') {
   load();
   lib.run(lib.server());
+}
+
+if (argv[0] === 'init') {
+  lib.init();
 }
