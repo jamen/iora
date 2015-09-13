@@ -1,15 +1,11 @@
-'use strict';
+#!/usr/bin/env node
 
-module.exports = function(){
-  var lib = require('../lib');
-
-  for (var m in lib) {
-    try {
-      m([], [], []);
-    } catch (e) {
-      throw e;
-    }
+for (var m in require('../lib')) {
+  try {
+    m();
+  } catch (e) {
+    console.log('Test failed');
+    throw e;
   }
-
-  console.log('All tests pass.');
-};
+  console.log('Test passed');
+}
