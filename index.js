@@ -14,10 +14,11 @@ var configPath = path.join(process.cwd(), 'iora.json');
 try {
   iora.config = refig
     .set('async', false)
-    .read(configPath)
-    .set('async', true);
+    .read(configPath);
+
+  refig.set('async', true);
 } catch (e) {
-  console.error('Failed to read ' + configPath);
+  console.log(e).error('Failed to read ' + configPath);
 }
 
 /*
