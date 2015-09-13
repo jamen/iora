@@ -10,16 +10,22 @@ global.iora = {};
 /*
  * Load configuration
  */
-var configPath = path.join(process.cwd(), 'iora.json');
-try {
-  iora.config = refig
-    .set('async', false)
-    .read(configPath);
+var load = function(){
+  var configPath = path.join(process.cwd(), 'iora.json');
+  try {
+    iora.config = refig
+      .set('async', false)
+      .read(configPath);
 
-  refig.set('async', true);
-} catch (e) {
-  console.log(e).error('Failed to read ' + configPath);
-}
+    refig.set('async', true);
+  } catch (e) {
+    if (e instanceof SyntaxError) {
+      console.error('Failed to parse ' + configPath + ' as JSON.');
+    } else {
+      console.error('Failed to read ' + configPath);
+    }
+  }
+};
 
 /*
  * Check flags
@@ -31,9 +37,12 @@ if (silent !== -1) {
   console.silence();
 }
 
+iora.argv = argv;
+
 /*
  * Argument routing:
  */
 if (argv[0] === 'run') {
+  load();
   lib.run(lib.server());
 }
