@@ -9,5 +9,6 @@
   "undef": true,
   "unused": true,
   "eqnull": true,
-  "loopfunc": true
+  "loopfunc": true,
+  "predef": [ "iora" ]
 }
