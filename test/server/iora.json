@@ -7,15 +7,5 @@
   "routes": {
     "test": ["/one", "/two"],
     "foo": "/bar"
-  },
-
-  "host": "0.0.0.0",
-
-  "http": {
-    "port": 8000
-  },
-
-  "https": {
-    "disabled": true
   }
 }
