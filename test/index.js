@@ -2,7 +2,10 @@
 
 for (var m in require('../lib')) {
   try {
-    m();
+    if (typeof m === 'function') {
+      m();
+    }
+    m;
   } catch (e) {
     console.log('Test failed');
     throw e;
