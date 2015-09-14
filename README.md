@@ -17,10 +17,10 @@ npm install -g iora
 
 # Usage
 ```
-iora <command> [directory path] [options...]
+iora <command> [directory] [options...]
 ```
 
-- `iora run [directory path]`: Run the specified directory (or cwd).
+- `iora run [directory]`: Run the specified directory (or cwd).
 - `iora init [directory]`: Create a `iora.json` file in the specified directory (or cwd).
 
 
