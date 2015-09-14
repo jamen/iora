@@ -62,3 +62,7 @@ if (argv[0] === 'run') {
 if (argv[0] === 'init') {
   lib.init();
 }
+
+if (argv[0] === 'version') {
+  lib.version();
+}
