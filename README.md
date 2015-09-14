@@ -23,16 +23,18 @@ iora <command> [directory] [options...]
 Run `iora help` for a list of commands and their usage.
 
 # Documentation
-Iora is documented at www.iorajs.org/docs/, right now this is not wiki-style, but [new.iorajs.org/docs/](https://github.com/iora/new.iorajs.org) is currently being developed and will be wiki-style.  So keep checking in!
+Iora is documented here on GitHub through the [Wiki pages](https://github.com/iora/iora/wiki), you can find a lot of information from the community there.  But, you can also find official documentation at www.iorajs.org/docs/
 
 # Contributing
-See the [CONTRIBUTING.md](CONTRIBUTING.md) file for more information on contributing guidelines.
+See the [CONTRIBUTING.md](CONTRIBUTING.md) file for more information on contributing guidelines.  It contains information about creating issues, contributing through forks and pull requests, and how your contributions are licensed. (Pretty important stuff!!)
 
-# [License](LICENSE)
-Iora, and any contributions made towards iora are licensed under MIT.
+# License
+Iora and any contributions made towards iora are licensed under MIT.  
+
+See the [LICENSE](LICENSE) file for more information about MIT and how this product is licensed.
 
 # Thanks to
- - [Dustin Dowell (Whale)](https://github.com/dustindowell22): Creating an awesome logo for iora, free of charge.
+ - [Dustin Dowell (Whale)](https://github.com/dustindowell22) for creating us an awesome logo, free of charge.
 
 
  [npm-downloads-image]: https://img.shields.io/npm/dm/iora.svg?style=flat-square
