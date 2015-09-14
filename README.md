@@ -20,8 +20,19 @@ npm install -g iora
 iora <command> [directory] [options...]
 ```
 
-- `iora run [directory]`: Run the specified directory (or cwd).
-- `iora init [directory]`: Create a `iora.json` file in the specified directory (or cwd).
+Run `iora help` for a list of commands and their usage.
+
+# Documentation
+Iora is documented at www.iorajs.org/docs/, right now this is not wiki-style, but [new.iorajs.org/docs/](https://github.com/iora/new.iorajs.org) is currently being developed and will be wiki-style.  So keep checking in!
+
+# Contributing
+See the [CONTRIBUTING.md](CONTRIBUTING.md) file for more information on contributing guidelines.
+
+# [License](LICENSE)
+Iora, and any contributions made towards iora are licensed under MIT.
+
+# Thanks to
+ - [Dustin Dowell (Whale)](https://github.com/dustindowell22): Creating an awesome logo for iora, free of charge.
 
 
  [npm-downloads-image]: https://img.shields.io/npm/dm/iora.svg?style=flat-square
