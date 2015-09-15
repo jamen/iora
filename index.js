@@ -72,9 +72,9 @@ else if (argv[0] === 'help') {
 }
 else {
   if (argv[0]) {
-    console.error('Unknown command "'+argv[0]+'"')
+    console.error('Unknown command "'+argv[0]+'"');
   } else {
     console.info('Usage: iora <command> [directory] [options...]')
-           .log('      Type "iora help" for more information.')
+           .log('      Type "iora help" for more information.');
   }
 }
