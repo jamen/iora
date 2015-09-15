@@ -8,5 +8,5 @@ for (var m in require('../lib')) {
     console.log('Test failed');
     throw e;
   }
-  console.log('Test passed');
 }
+console.log('Test passed');
