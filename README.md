@@ -5,7 +5,7 @@
 
 [![Version][npm-version-image]][npm-link] [![Travis][travis-image]][travis-link] [![Downloads][npm-downloads-image]][npm-link] [![Gitter][gitter-image]][gitter-link]
 
-Iora is a boilerplate stuffed into a command line tool for making modular HTTP/HTTPS servers through Express in a breeze.  You route certain requests to certain JavaScript files via a `iora.json`.  You can also add iora middleware that's either npm hosted or local, you just drop those into your iora.json too!  Check out the [iora-static]() middleware if you're interested in making a portion of your server into a static file-serve.
+Iora is a boilerplate stuffed into a command line tool for making modular HTTP/HTTPS servers through Express in a breeze.  You route certain requests to certain JavaScript files via a `iora.json`.  You can also add iora middleware that's either npm hosted or local, you just drop those into your iora.json too!  Check out the [iora-static](https://github.com/iora/iora-static) middleware if you're interested in making a portion of your server into a static file-serve.
 
 # Install
 You can install iora via npm:
