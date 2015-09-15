@@ -59,10 +59,22 @@ if (argv[0] === 'run') {
   lib.run(lib.server());
 }
 
-if (argv[0] === 'init') {
+else if (argv[0] === 'init') {
   lib.init();
 }
 
-if (argv[0] === 'version') {
+else if (argv[0] === 'version') {
   lib.version();
+}
+
+else if (argv[0] === 'help') {
+  lib.help();
+}
+else {
+  if (argv[0]) {
+    console.error('Unknown command "'+argv[0]+'"')
+  } else {
+    console.info('Usage: iora <command> [directory] [options...]')
+           .log('      Type "iora help" for more information.')
+  }
 }
