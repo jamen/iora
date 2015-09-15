@@ -1,6 +1,6 @@
 {
   "name": "iora",
-  "version": "3.0.2",
+  "version": "3.2.0",
   "description": "Make your servers modular and easier to manage with iora.",
   "main": "index.js",
   "scripts": {
