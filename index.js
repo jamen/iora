@@ -15,7 +15,7 @@ lib.utils(iora);
 var silent =  argv.indexOf('--silent');
 if (silent !== -1) {
   argv.splice(silent, 1);
-  console.silence();
+  iora.silence();
 }
 
 iora.argv = argv;
