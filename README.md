@@ -1,7 +1,7 @@
 ![iora][title-image]
 ====
 
-<img align="right" height="300" src="http://www.iorajs.org/resources/images/iora.png">
+<img align="right" height="300" src="http://www.iorajs.org/resources/images/iora.svg">
 
 [![Version][npm-version-image]][npm-link]
 [![Travis][travis-image]][travis-link]
