@@ -4,7 +4,8 @@
   "description": "Make your servers modular and easier to manage with iora.",
   "main": "index.js",
   "scripts": {
-    "test": "node test"
+    "test": "node test",
+    "start": "iora run"
   },
   "repository": {
     "type": "git",
@@ -29,5 +30,6 @@
   "bin": {
     "iora": "index.js"
   },
-  "homepage": "http://www.iorajs.org"
+  "homepage": "http://www.iorajs.org",
+  "preferGlobal": true
 }
