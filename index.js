@@ -2,10 +2,11 @@
 var lib = require('./lib'),
     refig = require('refig'),
     path = require('path'),
-    argv = process.argv.slice(2),
-    console = lib.utils;
+    argv = process.argv.slice(2);
 
 global.iora = {};
+
+lib.utils(iora);
 
 /*
  * Check flags
@@ -44,9 +45,9 @@ var load = function(){
     refig.set('async', true);
   } catch (e) {
     if (e instanceof SyntaxError) {
-      console.error('Failed to parse ' + configPath + ' as JSON.');
+      iora.error('Failed to parse ' + configPath + ' as JSON.', 1);
     } else {
-      console.error('Failed to read ' + configPath);
+      iora.error('Failed to read ' + configPath, 1);
     }
   }
 };
@@ -72,9 +73,9 @@ else if (argv[0] === 'help') {
 }
 else {
   if (argv[0]) {
-    console.error('Unknown command "'+argv[0]+'"');
+    iora.error('Unknown command "'+argv[0]+'"');
   } else {
-    console.info('Usage: iora <command> [directory] [options...]')
-           .log('      Type "iora help" for more information.');
+    iora.info('Usage: iora <command> [directory] [options...]')
+        .log('      Type "iora help" for more information.');
   }
 }
