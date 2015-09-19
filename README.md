@@ -36,7 +36,7 @@ Iora and any contributions made towards iora are licensed under MIT.
 See the [LICENSE](LICENSE) file for more information about MIT and how this product is licensed.
 
 # Thanks to
- - [Dustin Dowell (Whale)](https://github.com/dustindowell22) for creating us an awesome logo, free of charge.
+ - [Dustin Dowell](https://github.com/dustindowell22) for creating us an awesome logo, free of charge.
 
 
  [travis-image]: https://travis-ci.org/iora/iora.svg?branch=master
