@@ -26,7 +26,11 @@ iora.argv = argv;
 
 iora.dir = (function(){
  if (argv[1]) {
-   return path.resolve(path.join(process.cwd(), argv[1]));
+   if (path.isAbsolute(argv[1])) {
+     return argv[1];
+   } else {
+     return path.resolve(path.join(process.cwd(), argv[1]));
+   }
  } else {
    return path.resolve(process.cwd());
  }
