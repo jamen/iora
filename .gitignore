@@ -1,6 +1,3 @@
+node_modules
 .DS_Store
 ._*
-*.log
-*.pid
-local
-node_modules

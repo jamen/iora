@@ -1,4 +1,0 @@
-test/
-!/test/index.js
-.jshintrc
-.travis.yml
