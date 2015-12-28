@@ -5,8 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "ava",
-    "build": "babel lib -d dist",
-    "prepublish": "npm run compile"
+    "build": "babel --presets es2015 lib -d dist",
+    "pretest": "npm run build",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
