@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "ava",
-    "build": "babel --presets es2015 lib -d dist",
+    "build": "babel --presets es2015 lib/ -d dist/",
     "pretest": "npm run build",
     "prepublish": "npm run build"
   },

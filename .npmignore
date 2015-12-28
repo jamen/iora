@@ -1,5 +1,4 @@
-*
-!LICENSE
-!README.md
-!dist
-!index.js
+lib/
+.travis.yml
+.gitignore
+.eslintrc.json
