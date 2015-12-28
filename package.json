@@ -2,7 +2,7 @@
   "name": "iora",
   "version": "4.0.0",
   "description": "Create modular HTTP servers.",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "ava",
     "build": "babel --presets es2015 lib/ -d dist/",
