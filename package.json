@@ -1,0 +1,30 @@
+{
+  "name": "iora",
+  "version": "4.0.0",
+  "description": "Create modular HTTP servers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iora/iora.git"
+  },
+  "keywords": [
+    "iora",
+    "modular",
+    "http",
+    "server"
+  ],
+  "author": "Jamen Marz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iora/iora/issues"
+  },
+  "homepage": "https://github.com/iora/iora#readme",
+  "devDependencies": {
+    "ava": "^0.8.0",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^2.1.1"
+  }
+}
