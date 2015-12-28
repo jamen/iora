@@ -2,9 +2,11 @@
   "name": "iora",
   "version": "4.0.0",
   "description": "Create modular HTTP servers.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "build": "babel lib -d dist",
+    "prepublish": "npm run compile"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,8 @@
   "homepage": "https://github.com/iora/iora#readme",
   "devDependencies": {
     "ava": "^0.8.0",
+    "babel-cli": "^6.3.17",
+    "babel-preset-es2015": "^6.3.13",
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^2.1.1"
   }
